@@ -8,10 +8,10 @@ import utils
 
 CAMERA_RTSP_URL = "rtsp://admin_camera:camera_password@192.168.152.105:554/stream2"
 
-bird_detection = 'bird_trained_models/bird_detection/birds_model_lite1.tflite' 
-bird_classification = 'bird_trained_models/bird_classification/10_birds_species_model_lite1.tflite'
-first_retrained_bird_detection_model = "bird_trained_models/retrained_models_for_detection/retrain1_birds_detection_lite0.tflite"
-second_retrained_bird_detection_model = "bird_trained_models/retrained_models_for_detection/retrain2_birds_detection_lite0.tflite"
+bird_detection = 'tf_bird_trained_models/bird_detection/birds_model_lite1.tflite' 
+bird_classification = 'tf_bird_trained_models/bird_classification/10_birds_species_model_lite1.tflite'
+first_retrained_bird_detection_model = "tf_bird_trained_models/retrained_models_for_detection/retrain1_birds_detection_lite0.tflite"
+second_retrained_bird_detection_model = "tf_bird_trained_models/retrained_models_for_detection/retrain2_birds_detection_lite0.tflite"
 
 app = Flask(__name__)
 
