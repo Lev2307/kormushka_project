@@ -20,7 +20,7 @@ LAST_IMAGE_DATETIME_FILE="last_image_datetime_file.txt"
 SYMBOLS_FOR_MAKING_RANDOM_FILE_NAME_SUFFIX = 'zwertyuiopasdfghjklzxcvbnmZQWERTYUIOPASDFGHJKLXCVBNM123456789'
     
 def upload_image_to_yadisk(image_path):
-    disk = yadisk.YaDisk(token="y0_AgAAAABGH1N8AAsnlQAAAAD4ijGdMRFlxmg8QCKx3cM6PMBHYkJ9GJo")
+    disk = yadisk.YaDisk(token=SECRET_TOKEN) # SECRET_TOKEN is token given by yadisk api
     if not disk.exists(BIRDS_FOLDER):
         disk.mkdir(BIRDS_FOLDER)
     disk.upload(image_path, BIRDS_FOLDER+image_path)
